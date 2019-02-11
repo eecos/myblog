@@ -1,0 +1,47 @@
+.DS_Store
+node_modules
+/dist
+/docs/.vuepress/dist
+node_modules/
+docs/.vuepress/node_modules
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Created by https://www.gitignore.io/api/vuejs
+# Edit at https://www.gitignore.io/?templates=vuejs
+
+### Vuejs ###
+node_modules
+.DS_Store
+test/
+
+# End of https://www.gitignore.io/api/vuejs
+
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/visualstudiocode

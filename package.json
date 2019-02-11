@@ -1,0 +1,24 @@
+{
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "deploy": "bash deploy.sh"
+    },
+    "dependencies": {
+        "leancloud-storage": "^3.11.1",
+        "valine": "^1.3.4",
+        "vuepress": "^0.14.8"
+    },
+    "keywords": [
+        "blog",
+        "vuepress"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mrjerryli/myblog.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mrjerryli/myblog/issues"
+    },
+    "license": "MIT"
+}
