@@ -2,7 +2,7 @@
 home: true
 heroImage: /baobao.jpeg
 heroText: 李加廷の博客
-tagline: 将一付好牌打好没有什么了不起，能将一付坏牌打好的人才值得钦佩！
+tagline: 努力攒够了，梦想才会开花！🌼
 actionText: 梦想启程 →
 actionLink: /springcloud/
 features:

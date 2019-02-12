@@ -1,7 +1,6 @@
 ---
 title: 'java学习第一篇'
 lang: zh-CN
-datetime: 2018-12-17
 meta:
   - name: description
     content: 快应用开发资源、教程汇聚，云集最新的快应用教程文章、开发资源、项目案例及新闻动态；为快应用开发者提供便利和参考。

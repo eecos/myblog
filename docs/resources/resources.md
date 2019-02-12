@@ -1,7 +1,6 @@
 ---
 title: 资料链接
 lang: zh-CN
-datetime: 2019-02-09
 meta:
   - name: description
     content: 前端学习资源

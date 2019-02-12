@@ -36,7 +36,7 @@ export default {
     }
   },
   computed: {
-    // 取最近20条文章
+    // 取最近6条文章
     list() {
       return this.$site.pages.filter((i) => {
         let { path } = i

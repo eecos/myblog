@@ -5,12 +5,26 @@
         "deploy": "bash deploy.sh"
     },
     "dependencies": {
+        "@vuepress/theme-default": "^1.0.0-alpha.37",
         "leancloud-storage": "^3.11.1",
         "valine": "^1.3.4",
+        "markdown-it-abbr": "^1.0.4",
+        "markdown-it-attrs": "^2.3.2",
+        "markdown-it-checkbox": "^1.1.0",
+        "markdown-it-fontawesome": "^0.3.0",
+        "markdown-it-footnote": "^3.0.1",
+        "markdown-it-katex": "^2.0.3",
+        "markdown-it-kbd": "^1.1.1",
+        "markdown-it-imsize": "2.0.1",
+        "markdown-it-mark": "^2.0.0",
+        "markdown-it-plantuml": "^1.2.0",
+        "markdown-it-sub": "^1.0.0",
+        "markdown-it-sup": "^1.0.0",
+        "markdown-it-task-checkbox": "^1.0.6",
         "vuepress": "^0.14.8"
     },
     "keywords": [
-        "blog",
+        "myblog",
         "vuepress"
     ],
     "repository": {

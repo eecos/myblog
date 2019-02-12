@@ -1,7 +1,6 @@
 ---
 title: 免费图书
 lang: zh-CN
-datetime: 2019-02-09
 meta:
   - name: description
     content: 免费图书
@@ -9,7 +8,7 @@ meta:
     content: 免费图书
 ---
 
-给程序员的开源、免费图书集合
+给程序员的开源、免费图书集合，欢迎大家进来学习
 ================
 
 ## 翻墙
