@@ -157,7 +157,7 @@ const sidebar = {
     '/prose/': [
         //多级菜单形式
         {
-            title: '精品散文',
+            title: '其他文章',
             collapsable: true,
             children: ['prose1'],
         },
