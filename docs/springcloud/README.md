@@ -1,5 +1,5 @@
 ---
-title: 'SpringCloud介绍及相关资源'
+title: 'SpringCloud入门'
 lang: zh-CN
 meta:
   - name: description
@@ -7,10 +7,10 @@ meta:
   - name: keywords
     content: SpringCloud介绍
 ---
-# SpringCloud介绍
+## SpringCloud介绍
 Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。
 
-# SpringCloud组件
+## SpringCloud组件
 SpringCloud相关组件
 
 * Spring Cloud Eureka：一个基于rest服务的服务治理组件，包括服务注册中心、服务注册与服务发现机制的实现，实现了云端负载均衡和中间层服务器的故障转移。
@@ -46,9 +46,9 @@ CloudFoundry官网地址：https://www.cloudfoundry.org/
 
 ![微服务技术](https://www.lijiating.online/myblog/images/springcloud-zujian.png)
 
-# SpringCloud发展
+## SpringCloud发展
 [原文章](http://www.springcloud.cn/view/415)
-## Spring Cloud第一代
+### SpringCloud第一代
 
 | 组件                             | 来源                 | 说明                                                                      | 组件                             |
 | ---------------------------------- | ---------------------- | --------------------------------------------------------------------------- | ---------------------------------- |
@@ -60,7 +60,7 @@ CloudFoundry官网地址：https://www.cloudfoundry.org/
 | spring-cloud-ribbon                | 来源于Netflix集成 | ribbon目前还在跟随Spring Cloud版本维护中，目前孵化未来替代品spring-cloud-lb | spring-cloud-ribbon                |
 | Spring-cloud-hystrix               | 来源于Netflix集成 | 目前还在跟随Spring Cloud版本维护中目前已经孵化spring-cloud-r4j | Spring-cloud-hystrix               |
 
-## Spring Cloud 第二代
+### SpringCloud 第二代
 Spring Cloud第一代和第二代的组件组合汇总，如下表所示。
 |                  | Spring Cloud第一代       | Spring Cloud第二代                        | 组件                             |
 | ---------------- | --------------------------- | -------------------------------------------- | ---------------------------------- |
@@ -75,7 +75,7 @@ Spring Cloud第一代和第二代的组件组合汇总，如下表所示。
 ::: warning 说明
 以为内置均从网上资料查找借鉴，后续会陆续进行更新，如有侵权，可联系本人。
 :::
-## 推荐开源项目
+## SpringCloud开源推荐
 * https://github.com/alibaba/Sentinel
 
 * https://github.com/spring-cloud-incubator/spring-cloud-r4j
