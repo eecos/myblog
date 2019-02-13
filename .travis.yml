@@ -1,37 +1,15 @@
 language: node_js
-
-node_js: 
-    - '8'
+sudo: required
+node_js:
+  - 8.11.3
+branch: master
 cache:
-    apt: true
-    directories:
-        - node_modules
-
-notifications:
-    email:
-        recipients:
-            - mrjerryli@yeah.net
-        on_success: change
-        on_failure: always
-
-env:
-    global:
-        # Github Pages
-        # - GH_REF: github.com/mrjerryli/mrjerryli.github.io.git
-        # - GH_CUSTOM_DOMAIN: www.lijiating.online
-        - GH_REF: github.com/mrjerryli/myblog.git
-branches:
-  only:
-  - master
-
+  directories:
+    - node_modules
 before_install:
     - export TZ='China/Shanghai'
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     - export PATH=$HOME/.yarn/bin:$PATH
     - chmod +x ./deploy.sh
-
 script:
-  - yarn docs:build
-
-after_script:
   - ./deploy.sh
