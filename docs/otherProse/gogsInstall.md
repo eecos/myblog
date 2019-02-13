@@ -147,9 +147,9 @@ use mysql;
 ::: 
 
 ::: tip 修改密码
->>update user set authentication_string=password('你的密码') where user='root';
->>flush privileges;
->>exit
+update user set authentication_string=password('你的密码') where user='root';
+flush privileges;
+exit
 ::: 
 
 
@@ -158,17 +158,17 @@ use mysql;
 ### 10.登录再次设置密码（不知道为啥如果不再次设置密码就操作不了数据库了）
 ::: tip 命令
 /usr/local/mysql/bin/mysql -u root -p
->>ALTER USER 'root'@'localhost' IDENTIFIED BY '修改后的密码';
->>exit;
+ALTER USER 'root'@'localhost' IDENTIFIED BY '修改后的密码';
+exit;
 ::: 
 
 ### 11.允许远程连接
 ::: tip 命令
 /usr/local/mysql/bin/mysql -u root -p
->>use mysql;
->>update user set host='%' where user = 'root';
->>flush privileges;
->>eixt;
+use mysql;
+update user set host='%' where user = 'root';
+flush privileges;
+eixt;
 :::
 
 ### 12.添加快捷方式
