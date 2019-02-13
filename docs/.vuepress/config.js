@@ -342,7 +342,7 @@ module.exports = {
     },
     markdown: {
         anchor: { permalink: true }, // 内置插件设置：文件内部链接。
-        lineNumbers: true, // 代码块显示行号
+        lineNumbers: false, // 代码块显示行号
         config: md => { // 外部插件设置：markdown-it-plugin。
             md.set({ breaks: true })
             md.use(require('markdown-it-abbr')),
