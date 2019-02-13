@@ -15,7 +15,7 @@ cd docs/.vuepress/dist
 #git运行脚本
 git init
 git add -A
-git commit -m 'travis deploy update'
+git commit -m 'travis deploy update . lijiating'
 
 git config --local user.name "李加廷"
 git config --local user.email "mrjerryli@yeah.net"
