@@ -1,39 +1,37 @@
 language: node_js
-# nodejs版本
+
 node_js: 
-    - '8.12.0'
- 
-# Travis-CI Caching
+    - '8'
 cache:
-  directories:
-    - node_modules
- 
-# S: Build Lifecycle
-install:
-  - npm install
-  - npm install -g vuepress
- 
-before_script:
- 
-# 无其他依赖项所以执行npm run build 构建就行了
-script:
-  - npm run docs:build
- 
-after_script:
-  - cd docs/.vuepress/dist
-  - git init
-  - git config user.name "${U_NAME}"
-  - git config user.email "${U_EMAIL}"
-  - git add .
-  - git commit -m "Update tools travis"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-# E: Build LifeCycle
- 
-#指定分支，只有指定的分支提交时才会运行脚本
+    apt: true
+    directories:
+        - node_modules
+
+notifications:
+    email:
+        recipients:
+            - mrjerryli@yeah.net
+        on_success: change
+        on_failure: always
+
+env:
+    global:
+        # Github Pages
+        # - GH_REF: github.com/mrjerryli/mrjerryli.github.io.git
+        # - GH_CUSTOM_DOMAIN: www.lijiating.online
+        - GH_REF: github.com/mrjerryli/myblog.git
 branches:
   only:
-    - master
-env:
- global:
-   # 我将其添加到了travis-ci的环境变量中
-   #- GH_REF: github.com/yimogit/metools.git 
+  - master
+
+before_install:
+    - export TZ='China/Shanghai'
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - export PATH=$HOME/.yarn/bin:$PATH
+    - chmod +x ./deploy.sh
+
+script:
+  - yarn docs:build
+
+after_script:
+  - ./deploy.sh
