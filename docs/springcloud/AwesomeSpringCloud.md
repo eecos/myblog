@@ -1,3 +1,13 @@
+---
+text: SpringCloud学习资源
+lang: zh-CN
+meta:
+  - name: description
+    content: SpringCloud学习资源
+  - name: keywords
+    content: SpringCloud学习资源
+---
+
 # 收集各种Spring Cloud 学习资源
 [原文章](https://github.com/ityouknow/awesome-spring-cloud)
 ## 目录

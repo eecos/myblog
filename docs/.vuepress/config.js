@@ -2,9 +2,9 @@ const path = require('path');
 
 const nav = [
     { text: '🚀首页', link: '/' },
-    { text: '旧博客', link: 'https://www.lijiating.online', icon: 'reco-tag' },
+    { text: '📗旧博客', link: 'https://www.lijiating.online', icon: 'reco-tag' },
     {
-        text: '📗目录',
+        text: '目录',
         items: [{
                 text: '开源学习',
                 items: [
@@ -29,9 +29,9 @@ const nav = [
                 ]
             },
             {
-                text: '爱好培养',
+                text: '学习扩展',
                 items: [
-                    { text: '散文', link: '/prose/' }
+                    { text: '三方教程', link: '/otherProse/' }
                 ]
 
             }
@@ -154,24 +154,17 @@ const sidebar = {
         ]
     }],
     // 打开FAQ主页链接时生成下面这个菜单
-    '/prose/': [
+    '/otherProse/': [
         //多级菜单形式
         {
-            title: '其他文章',
+            title: 'Gogs服务器安装教程',
             collapsable: true,
-            children: ['prose1'],
+            children: ['gogsInstall'],
         },
         {
-            // 菜单名
-            title: '人生哲理',
+            title: 'markdown扩展',
             collapsable: true,
-            // 子菜单
-            children: [
-                // ['','']=>[路径,标题]
-                // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
-                // 不以 '/' 结尾的就是指向.md文件    
-                'prose2'
-            ],
+            children: ['markdown扩展'],
         }
     ],
     '/resources/': [{

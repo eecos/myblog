@@ -1,8 +1,14 @@
 ---
-title: 'markdown-it demo'
+text: markdown扩展
+lang: zh-CN
+meta:
+  - name: description
+    content: markdown扩展
+  - name: keywords
+    content: markdown扩展
 ---
 
----
+## 开始练习
 __Advertisement :)__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
