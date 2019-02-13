@@ -12,8 +12,7 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-#git init
-git pull https://${GH_TOKEN}@github.com/${USERNAME}/${REPO}.git master:${P_BRANCH}
+git init
 git add -A
 git commit -m 'travis deploy update'
 
