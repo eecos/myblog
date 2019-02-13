@@ -67,8 +67,8 @@ groupadd mysql
 useradd mysql -g mysql
 :::
 
-### 5.将/usr/local/mysql的所有者及所属组改为mysql
-::: tip 命令
+### 5.cd 到/usr/local/mysql的所有者及所属组改为mysql
+::: tip 赋权命令
 chown -R mysql.mysql /usr/local/mysql
 :::
 
