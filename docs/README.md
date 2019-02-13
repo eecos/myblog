@@ -15,7 +15,7 @@ features:
 footer: MIT Licensed | Copyright © 2019-present Jerry You
 ---
 <!-- 最近更新 -->
-<CateList />
+<!-- <CateList /> -->
 
 <!-- 二维码与B站二维码 -->
 <div class="features"  style="text-align:center;width :98%">
