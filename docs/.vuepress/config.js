@@ -83,6 +83,10 @@ const nav = [
                 items: [
                     { text: 'valine无后端评论系统', link: 'https://valine.js.org' }
                 ]
+            },
+            {
+                text: 'linux命令查询',
+                link: 'http://man.linuxde.net'
             }
         ]
     },
