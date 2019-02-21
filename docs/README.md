@@ -30,11 +30,11 @@ footer: MIT Licensed | Copyright © 2019-present Jerry You
 
 <div class="features"  style="text-align:center;width :98%">
   <div class="feature" >
-    <p><img src="https://www.lijiating.online/myblog/Wechatper.jpeg" /></p>
+    <p><img src="http://pnatvoegb.bkt.clouddn.com/Wechatper.jpeg" /></p>
     <h2>weixin</h2>
   </div>
   <div class="feature" >
-    <p><img src="https://www.lijiating.online/myblog/bzhan.jpeg" /></p>
+    <p><img src="http://pnatvoegb.bkt.clouddn.com/bzhan.jpeg" /></p>
     <h2>bilibili</h2>
   </div>
 </div>

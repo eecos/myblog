@@ -15,7 +15,7 @@ cd docs/.vuepress/dist
 #git运行脚本
 git init
 git add -A
-git commit -m 'travis deploy update . lijiating'
+git commit -m 'deploy update . lijiating by travis'
 
 git config --local user.name "李加廷"
 git config --local user.email "mrjerryli@yeah.net"
@@ -24,7 +24,8 @@ git config --local user.email "mrjerryli@yeah.net"
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+# git push -f git@github.com:<USERNAME>/<USERNAME>.git master:gh-pages
+#git push -f git@github.com:mrjerryli/myblog.git master:gh-pages
 
 # 如果使用 travis 持续集成
 git push -f https://${GH_TOKEN}@github.com/${USERNAME}/${REPO}.git master:${P_BRANCH}

@@ -4,7 +4,6 @@
     "description": "mrjerryli",
     "main": "index.js",
     "scripts": {
-        "clean": "rimraf dist/*",
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs",
         "deploy": "bash deploy.sh",
