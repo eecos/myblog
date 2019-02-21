@@ -8,6 +8,8 @@
         "@vuepress/theme-default": "^1.0.0-alpha.37",
         "leancloud-storage": "^3.11.1",
         "valine": "^1.3.4",
+        "markdown-it": "^8.4.1",
+        "markdown-it-emoji": "^1.4.0",
         "markdown-it-abbr": "^1.0.4",
         "markdown-it-attrs": "^2.3.2",
         "markdown-it-checkbox": "^1.1.0",

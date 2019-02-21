@@ -3,40 +3,7 @@ const path = require('path');
 const nav = [
     { text: '🚀首页', link: '/' },
     { text: '📗旧博客', link: 'https://www.lijiating.online', icon: 'reco-tag' },
-    {
-        text: '目录',
-        items: [{
-                text: '开源学习',
-                items: [
-                    { text: '资源链接', link: '/resources/resources' },
-                    { text: '开源书籍', link: '/resources/books' }
-                ],
-            },
-            {
-                text: '前端学习',
-                items: [
-                    { text: 'javascript', link: '/js/' },
-                    { text: 'css', link: '/css/' },
-                    { text: 'vue', link: '/vue/' }
-                ]
-            },
-            {
-                text: '后端学习',
-                items: [
-                    { text: 'java', link: '/java/' },
-                    { text: 'springboot', link: '/springboot/' },
-                    { text: 'springcloud', link: '/springcloud/' }
-                ]
-            },
-            {
-                text: '学习扩展',
-                items: [
-                    { text: '三方教程', link: '/otherProse/' }
-                ]
-
-            }
-        ]
-    },
+    
     {
         text: '👓在线文档',
         items: [{
@@ -79,14 +46,11 @@ const nav = [
                 }]
             },
             {
-                text: '评论系统',
+                text: '其他扩展',
                 items: [
-                    { text: 'valine无后端评论系统', link: 'https://valine.js.org' }
+                    { text: 'valine无后端评论系统', link: 'https://valine.js.org' },
+                    { text: 'linux命令查询', link: 'http://man.linuxde.net' }
                 ]
-            },
-            {
-                text: 'linux命令查询',
-                link: 'http://man.linuxde.net'
             }
         ]
     },

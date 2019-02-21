@@ -1,6 +1,10 @@
 ---
 text: gogs安装教程
 lang: zh-CN
+sidebar: false
+
+projects:
+- image: /bolgimg/1.png
 meta:
   - name: description
     content: gogs安装教程
