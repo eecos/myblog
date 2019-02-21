@@ -12,8 +12,8 @@ links:
     url: 'https://weibo.com/u/6264444680'
   - link: Email
     url: 'mrjerryli@yeah.net'
-  - link: Google
-    url: 'mr.jerryljt@gmail.com'
+  # - link: Google
+  #   url: 'mr.jerryljt@gmail.com'
   # - link: Facebook
   #   url: 'https://facebook.com/'
   # - link: Twitter

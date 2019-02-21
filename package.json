@@ -8,13 +8,21 @@
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs",
         "deploy": "bash deploy.sh",
-        "npm:install": "npm i",
         "yarn:install": "yarn install"
     },
-
-    "keywords": [],
+    "keywords": [
+        "myblog",
+        "vuepress"
+    ],
     "author": "lijiating",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mrjerryli/myblog.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mrjerryli/myblog/issues"
+    },
     "dependencies": {
         "@vuepress/theme-default": "^1.0.0-alpha.35",
         "leancloud-storage": "^3.11.1",
