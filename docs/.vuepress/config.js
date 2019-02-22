@@ -44,6 +44,7 @@ const nav = [
     {
         text: '📙收藏分享',
         items: [
+            { text: 'Java学习+面试指南', link: 'https://github.com/Snailclimb/JavaGuide' },
             { text: '资源链接', link: '/Other/resources/resources' },
             { text: '开源书籍', link: '/Other/resources/books' }
         ]
