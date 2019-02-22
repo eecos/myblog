@@ -8,6 +8,8 @@ meta:
     content: 微服务注册中心-阿里nacos
 ---
 
+![SpringCloud](https://www.lijiating.online/myblog/images/springcloud.jpg)
+
 搭建SpringCloud 注册中心 采用阿里开源组件 nacos
 ===
 ## Nacos介绍
@@ -194,4 +196,4 @@ public class SpringcloudNacosServerApplication {
 ![nacos登录页面](https://www.lijiating.online/myblog/images/nacos-login.png)
 
 
-![注册成功页面](https://www.lijiating.online/myblog/images/nacos-sucess1.png)
+![nacos主页面](https://www.lijiating.online/myblog/images/nacos-index.png)

@@ -8,6 +8,8 @@ meta:
     content: SpringCloud学习资源
 ---
 
+![SpringCloud](https://www.lijiating.online/myblog/images/springcloud.jpg)
+
 # 扩展资源
 [原文章](https://github.com/ityouknow/awesome-spring-cloud)
 
