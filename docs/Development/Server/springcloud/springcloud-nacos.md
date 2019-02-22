@@ -8,7 +8,7 @@ meta:
     content: 微服务注册中心-阿里nacos
 ---
 
-![SpringCloud](https://www.lijiating.online/myblog/images/springcloud.jpg)
+![SpringCloud](https://www.lijiating.online/myblog/images/springcloud.png)
 
 搭建SpringCloud 注册中心 采用阿里开源组件 nacos
 ===

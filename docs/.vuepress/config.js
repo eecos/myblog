@@ -51,11 +51,11 @@ const nav = [
     {
         text: '📔计划归档',
         items: [
-            { text: '2019年学习计划', link: '/plan/2019plan' }
+            { text: '2019年学习计划', link: '/Plan/2019plan' }
         ]
     },
     { text: '📚博客', link: 'https://www.lijiating.online' },
-    { text: '🌀关于', link: '/about/' },
+    { text: '🌀关于', link: '/About/' },
 ];
 
 //侧边栏配置
