@@ -46,7 +46,14 @@ const nav = [
         items: [
             { text: 'Java学习+面试指南', link: 'https://github.com/Snailclimb/JavaGuide' },
             { text: '资源链接', link: '/Other/resources/resources' },
-            { text: '开源书籍', link: '/Other/resources/books' }
+            { text: '开源书籍', link: '/Other/resources/books' },
+            {
+                text: '优秀开源',
+                items: [
+                    { text: 'D2admin', link: 'https://doc.d2admin.fairyever.com' },
+                    { text: 'Hello Taroco', link: 'http://118.190.154.85:8080/' },
+                ]
+            }
         ]
     },
     {
