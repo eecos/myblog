@@ -38,6 +38,7 @@ const nav = [
             { text: '在线properties转yaml、yml工具', link: 'https://www.bejson.com/devtools/properties2yaml/' },
             { text: '在线工具集', link: "http://tool.oschina.net" },
             { text: 'BASE64加密解密', link: 'http://tool.oschina.net/encrypt?type=3' },
+            { text: '在线工具', link: 'https://tool.lu/' },
             { text: 'gitignore忽略文件在线生成', link: 'https://www.gitignore.io' }
         ]
     },
