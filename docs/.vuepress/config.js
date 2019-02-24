@@ -22,7 +22,8 @@ const nav = [
                 items: [
                     { text: 'gogs安装教程', link: '/Development/Tools/GogsInstall' },
                     { text: 'Git', link: '/Development/Tools/Git' },
-                    { text: 'Markdown扩展', link: '/Development/Tools/Markdown扩展' }
+                    { text: 'Markdown扩展', link: '/Development/Tools/Markdown扩展' },
+                    { text: 'Linux切换root用户', link: '/Development/Tools/Linux切换root用户' }
                 ]
             }
         ]
