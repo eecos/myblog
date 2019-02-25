@@ -29,17 +29,37 @@ const nav = [
         ]
     },
     {
-        text: '📘在线工具',
-        items: [
-            { text: 'JSON在线编辑', link: 'https://www.bejson.com/jsoneditoronline' },
-            { text: 'MD表格在线编辑', link: 'https://tool.lu/tables/' },
-            { text: 'Cron表达式在线生成', link: 'http://cron.qqe2.com' },
-            { text: '代码格式化', link: 'http://tool.oschina.net/codeformat/html' },
-            { text: 'UUID在线生成', link: 'https://1024tools.com/uuid' },
-            { text: '在线properties转yaml、yml工具', link: 'https://www.bejson.com/devtools/properties2yaml/' },
-            { text: 'BASE64加密解密', link: 'http://tool.oschina.net/encrypt?type=3' },
-            { text: '在线工具', link: 'https://tool.lu/' },
-            { text: 'gitignore忽略文件在线生成', link: 'https://www.gitignore.io' }
+        text: '📘在线资源',
+        items: [{
+                text: '在线工具',
+                items: [
+                    { text: 'JSON在线编辑', link: 'https://www.bejson.com/jsoneditoronline' },
+                    { text: 'MD表格在线编辑', link: 'https://tool.lu/tables/' },
+                    { text: 'Cron表达式在线生成', link: 'http://cron.qqe2.com' },
+                    { text: '代码格式化', link: 'http://tool.oschina.net/codeformat/html' },
+                    { text: 'UUID在线生成', link: 'https://1024tools.com/uuid' },
+                    { text: '在线properties转yaml、yml工具', link: 'https://www.bejson.com/devtools/properties2yaml/' },
+                    { text: 'BASE64加密解密', link: 'http://tool.oschina.net/encrypt?type=3' },
+                    { text: '在线工具', link: 'https://tool.lu/' },
+                    { text: 'gitignore忽略文件在线生成', link: 'https://www.gitignore.io' },
+                ]
+            },
+            {
+                text: '搜索工具',
+                items: [
+                    { text: '盘搜搜', link: 'http://www.pansoso.com/' },
+                    { text: 'MSDN,我要告诉你', link: 'https://msdn.itellyou.cn/' },
+
+                ]
+            },
+            {
+                text: '在线文档',
+                items: [
+                    { text: '糊涂工具', link: 'https://hutool.cn/' },
+                    { text: 'spring-security-oauth', link: 'http://projects.spring.io/spring-security-oauth/docs/oauth2.html' }
+                ]
+            }
+
         ]
     },
     {
