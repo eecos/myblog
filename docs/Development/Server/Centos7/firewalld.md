@@ -1,7 +1,12 @@
-
-
-
-
+---
+text: firewalld基本命令教程
+lang: zh-CN
+meta:
+  - name: description
+    content: firewalld基本命令教程
+  - name: keywords
+    content: firewalld基本命令教程
+---
 # <center> firewalld基本命令教程</center>
 
 

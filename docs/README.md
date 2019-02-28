@@ -18,6 +18,8 @@ links:
   #   url: 'https://facebook.com/'
   # - link: Twitter
   #   url: 'https://twitter.com/'
+
+#暂时关闭
 features:
 - title: 微服务架构学习
   details: Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。
@@ -27,6 +29,9 @@ features:
   details: Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。
 footer: MIT Licensed | Copyright © 2019-present Jerry You
 ---
+
+
+
 
 <div class="features"  style="text-align:center;width :98%">
   <div class="feature" >

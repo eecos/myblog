@@ -783,10 +783,10 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
-"@vuepress/plugin-active-header-links@^1.0.0-alpha.39":
-  version "1.0.0-alpha.39"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-active-header-links/download/@vuepress/plugin-active-header-links-1.0.0-alpha.39.tgz#55a1dea80cee9e7534fe98e93036c3bccbc601c2"
-  integrity sha1-VaHeqAzunnU0/pjpMDbDvMvGAcI=
+"@vuepress/plugin-active-header-links@^1.0.0-alpha.40":
+  version "1.0.0-alpha.40"
+  resolved "http://registry.npm.taobao.org/@vuepress/plugin-active-header-links/download/@vuepress/plugin-active-header-links-1.0.0-alpha.40.tgz#b40a8442ace4dbd7b6dd8439415dbd0140ec5136"
+  integrity sha1-tAqEQqzk29e23YQ5QV29AUDsUTY=
   dependencies:
     lodash.throttle "^4.1.1"
 
@@ -797,10 +797,10 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-nprogress@^1.0.0-alpha.39":
-  version "1.0.0-alpha.39"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.0.0-alpha.39.tgz#fb3791b506e02090a1f21a55643fd30b50ddbc43"
-  integrity sha1-+zeRtQbgIJCh8hpVZD/TC1DdvEM=
+"@vuepress/plugin-nprogress@^1.0.0-alpha.40":
+  version "1.0.0-alpha.40"
+  resolved "http://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.0.0-alpha.40.tgz#31da472642558a1a9f935a43468750a0507315b8"
+  integrity sha1-MdpHJkJVihqfk1pDRodQoFBzFbg=
   dependencies:
     nprogress "^0.2.0"
 
@@ -813,10 +813,10 @@
     register-service-worker "^1.5.2"
     workbox-build "^3.1.0"
 
-"@vuepress/plugin-search@^1.0.0-alpha.39":
-  version "1.0.0-alpha.39"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.0.0-alpha.39.tgz#0101bb645866a5c40d669db969cdf7c622c076bf"
-  integrity sha1-AQG7ZFhmpcQNZp25ac33xiLAdr8=
+"@vuepress/plugin-search@^1.0.0-alpha.40":
+  version "1.0.0-alpha.40"
+  resolved "http://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.0.0-alpha.40.tgz#f8bd8cbe7718ae3e321d416b91d79f3649b3ed60"
+  integrity sha1-+L2MvncYrj4yHUFrkdefNkmz7WA=
 
 "@vuepress/shared-utils@^1.0.0-alpha.0":
   version "1.0.0-alpha.0"
@@ -830,13 +830,13 @@
     hash-sum "^1.0.2"
 
 "@vuepress/theme-default@^1.0.0-alpha.35":
-  version "1.0.0-alpha.39"
-  resolved "http://registry.npm.taobao.org/@vuepress/theme-default/download/@vuepress/theme-default-1.0.0-alpha.39.tgz#5638d04768f5b71c83c28f5a750374e8b3f949f4"
-  integrity sha1-VjjQR2j1txyDwo9adQN06LP5SfQ=
+  version "1.0.0-alpha.40"
+  resolved "http://registry.npm.taobao.org/@vuepress/theme-default/download/@vuepress/theme-default-1.0.0-alpha.40.tgz#97ab610cfc57698bf466b2ef29caed8c0d48fd4b"
+  integrity sha1-l6thDPxXaYv0ZrLvKcrtjA1I/Us=
   dependencies:
-    "@vuepress/plugin-active-header-links" "^1.0.0-alpha.39"
-    "@vuepress/plugin-nprogress" "^1.0.0-alpha.39"
-    "@vuepress/plugin-search" "^1.0.0-alpha.39"
+    "@vuepress/plugin-active-header-links" "^1.0.0-alpha.40"
+    "@vuepress/plugin-nprogress" "^1.0.0-alpha.40"
+    "@vuepress/plugin-search" "^1.0.0-alpha.40"
     docsearch.js "^2.5.2"
     stylus "^0.54.5"
     stylus-loader "^3.0.2"
@@ -1043,9 +1043,9 @@ acorn-dynamic-import@^4.0.0:
   integrity sha1-SCIQFAWCo2uDw+NC4c/ryqkkCUg=
 
 acorn@^6.0.5:
-  version "6.1.0"
-  resolved "http://registry.npm.taobao.org/acorn/download/acorn-6.1.0.tgz#b0a3be31752c97a0f7013c5f4903b71a05db6818"
-  integrity sha1-sKO+MXUsl6D3ATxfSQO3GgXbaBg=
+  version "6.1.1"
+  resolved "http://registry.npm.taobao.org/acorn/download/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
+  integrity sha1-fSWuBbuK0fm2mRCOEJTs14hK3B8=
 
 agentkeepalive@^2.2.0:
   version "2.2.0"
@@ -1063,9 +1063,9 @@ ajv-keywords@^3.0.0, ajv-keywords@^3.1.0:
   integrity sha1-S4Mee1MUFafMUYzUBOc/YZPGNJ0=
 
 ajv@^6.0.1, ajv@^6.1.0, ajv@^6.5.5:
-  version "6.9.1"
-  resolved "http://registry.npm.taobao.org/ajv/download/ajv-6.9.1.tgz#a4d3683d74abc5670e75f0b16520f70a20ea8dc1"
-  integrity sha1-pNNoPXSrxWcOdfCxZSD3CiDqjcE=
+  version "6.9.2"
+  resolved "http://registry.npm.taobao.org/ajv/download/ajv-6.9.2.tgz#4927adb83e7f48e5a32b45729744c71ec39c9c7b"
+  integrity sha1-SSetuD5/SOWjK0Vyl0THHsOcnHs=
   dependencies:
     fast-deep-equal "^2.0.1"
     fast-json-stable-stringify "^2.0.0"
@@ -1796,14 +1796,14 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000938"
-  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000938.tgz#dc37923823ddf88e6bb0a82a7fb913a11e5cf681"
-  integrity sha1-3DeSOCPd+I5rsKgqf7kToR5c9oE=
+  version "1.0.30000939"
+  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000939.tgz#8cb54a9868fe040fbf2e2441408c68b7008912e8"
+  integrity sha1-jLVKmGj+BA+/LiRBQIxotwCJEug=
 
 caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864:
-  version "1.0.30000938"
-  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000938.tgz#b64bf1427438df40183fce910fe24e34feda7a3f"
-  integrity sha1-tkvxQnQ430AYP86RD+JONP7aej8=
+  version "1.0.30000939"
+  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000939.tgz#b9ab7ac9e861bf78840b80c5dfbc471a5cd7e679"
+  integrity sha1-uat6yehhv3iEC4DF37xHGlzX5nk=
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -2807,9 +2807,9 @@ es-to-primitive@^1.2.0:
     is-symbol "^1.0.2"
 
 es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.47"
-  resolved "http://registry.npm.taobao.org/es5-ext/download/es5-ext-0.10.47.tgz#d24232e1380daad5449a817be19bde9729024a11"
-  integrity sha1-0kIy4TgNqtVEmoF74ZvelykCShE=
+  version "0.10.48"
+  resolved "http://registry.npm.taobao.org/es5-ext/download/es5-ext-0.10.48.tgz#9a0b31eeded39e64453bcedf6f9d50bbbfb43850"
+  integrity sha1-mgsx7t7TnmRFO87fb51Qu7+0OFA=
   dependencies:
     es6-iterator "~2.0.3"
     es6-symbol "~3.1.1"
@@ -4128,9 +4128,9 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
 
 js-yaml@^3.11.0, js-yaml@^3.9.0:
-  version "3.12.1"
-  resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
-  integrity sha1-KVyGMqGKI+BUz1ydPOyv5ngWdgA=
+  version "3.12.2"
+  resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
+  integrity sha1-7x0GfFqdnLZb1y8oW12BBcd/FPw=
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -6983,9 +6983,9 @@ term-size@^1.2.0:
     execa "^0.7.0"
 
 terser-webpack-plugin@^1.1.0:
-  version "1.2.2"
-  resolved "http://registry.npm.taobao.org/terser-webpack-plugin/download/terser-webpack-plugin-1.2.2.tgz#9bff3a891ad614855a7dde0d707f7db5a927e3d9"
-  integrity sha1-m/86iRrWFIVafd4NcH99takn49k=
+  version "1.2.3"
+  resolved "http://registry.npm.taobao.org/terser-webpack-plugin/download/terser-webpack-plugin-1.2.3.tgz#3f98bc902fac3e5d0de730869f50668561262ec8"
+  integrity sha1-P5i8kC+sPl0N5zCGn1BmhWEmLsg=
   dependencies:
     cacache "^11.0.2"
     find-cache-dir "^2.0.0"
@@ -7428,9 +7428,9 @@ vm-browserify@0.0.4:
     indexof "0.0.1"
 
 vue-hot-reload-api@^2.3.0:
-  version "2.3.2"
-  resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.2.tgz#1fcc1495effe08a790909b46bf7b5c4cfeb6f21b"
-  integrity sha1-H8wUle/+CKeQkJtGv3tcTP628hs=
+  version "2.3.3"
+  resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
+  integrity sha1-J1b0bLMlgFTF9HI96K5+hzAqHM8=
 
 vue-loader@^15.2.4:
   version "15.6.4"
@@ -7479,9 +7479,9 @@ vue-template-compiler@^2.5.16:
     he "^1.1.0"
 
 vue-template-es2015-compiler@^1.9.0:
-  version "1.9.0"
-  resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.0.tgz#88f94663540bb2798d3e9018538e1255033700cd"
-  integrity sha1-iPlGY1QLsnmNPpAYU44SVQM3AM0=
+  version "1.9.1"
+  resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
+  integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
 vue@^2.5.16:
   version "2.6.7"
