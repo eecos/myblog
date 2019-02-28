@@ -23,7 +23,8 @@ const nav = [
                     { text: 'gogs安装教程', link: '/Development/Tools/GogsInstall' },
                     { text: 'Git', link: '/Development/Tools/Git' },
                     { text: 'Markdown扩展', link: '/Development/Tools/Markdown扩展' },
-                    { text: 'Linux切换root用户', link: '/Development/Tools/Linux切换root用户' }
+                    { text: 'Linux切换root用户', link: '/Development/Tools/Linux切换root用户' },
+                    { text: 'firewalld基本命令教程', link: '/Development/Server/Centos7/firewalld' }
                 ]
             }
         ]

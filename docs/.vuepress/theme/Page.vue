@@ -212,10 +212,11 @@ function find (page, items, offset) {
 
 .menu-link {
   position: fixed;
-  right: 5rem;
+  left: 75%;
   top: 15%;
+  border-top-style: outset;
 
-  li {
+    li {
     cursor: pointer;
 
     &:hover {
