@@ -16,7 +16,9 @@ meta:
 查看状态： `systemctl status firewalld`    
 开机禁用： `systemctl disable firewalld`    
 开机启用： `systemctl enable firewalld`    
-查看目前防火墙：`firewall-cmd --list-all`  
+查看目前防火墙：`firewall-cmd --list-all`
+查看防火墙开放的端口信息:`firewall-cmd --list-ports`
+
  
 ***
 
