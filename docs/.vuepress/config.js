@@ -18,6 +18,12 @@ const nav = [
                 ]
             },
             {
+                text: '异常处理归纳',
+                items: [
+                    { text: 'mysql', link: '/Development/Exception/MySQL/Lock' }
+                ]
+            },
+            {
                 text: '环境搭建',
                 items: [
                     { text: 'gogs安装教程', link: '/Development/Tools/GogsInstall' },
