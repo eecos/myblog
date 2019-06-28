@@ -3,7 +3,7 @@ text: 服务器时区和JAVA进程时区不一致问题解决
 lang: zh-CN
 meta:
   - name: description
-    content: 服务器时区和JAVA进程时区不一致问题解决
+    content: timezone
   - name: keywords
     content: timezone
 ---
