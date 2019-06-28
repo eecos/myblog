@@ -30,7 +30,8 @@ const nav = [
                     { text: 'Git', link: '/Development/Tools/Git' },
                     { text: 'Markdown扩展', link: '/Development/Tools/Markdown扩展' },
                     { text: 'Linux切换root用户', link: '/Development/Tools/Linux切换root用户' },
-                    { text: 'firewalld基本命令教程', link: '/Development/Server/Centos7/firewalld' }
+                    { text: 'firewalld基本命令教程', link: '/Development/Server/Centos7/firewalld' },
+                    { text: '服务器时区和JAVA进程时区不一致问题解决', link: '/Development/Server/Centos7/timezone' }
                 ]
             }
         ]
@@ -121,7 +122,7 @@ const sidebar = {
     '/Development/Tools/': [{
         title: "常用工具",
         children: ['/Development/Tools/Git', '/Development/Tools/GogsInstall', '/Development/Tools/Markdown扩展']
-    }]
+    }, ]
 };
 //注入到当前页面的 HTML <head> 中的标签
 const head = [
