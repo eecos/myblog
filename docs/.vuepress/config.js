@@ -18,9 +18,10 @@ const nav = [
                 ]
             },
             {
-                text: '异常处理归纳',
+                text: '零零碎碎归纳',
                 items: [
-                    { text: 'mysql', link: '/Development/Exception/MySQL/Lock' }
+                    { text: 'mysql', link: '/Development/Exception/MySQL/Lock' },
+                    { text: 'mysql', link: '/Development/Exception/MySQL/unloadMysql' }
                 ]
             },
             {
