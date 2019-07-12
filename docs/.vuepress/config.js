@@ -21,7 +21,7 @@ const nav = [
                 text: '零零碎碎归纳',
                 items: [
                     { text: 'mysql', link: '/Development/Exception/MySQL/Lock' },
-                    { text: 'mysql', link: '/Development/Exception/MySQL/unloadMysql' }
+                    { text: 'Mac卸载MySQL', link: '/Development/Exception/MySQL/unloadMysql' }
                 ]
             },
             {
