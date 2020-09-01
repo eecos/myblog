@@ -57,6 +57,10 @@ const nav = [
                         link: '/Development/Server/Centos7/firewalld'
                     },
                     {
+                        text: 'Web服务器基本搭建',
+                        link: '/Development/Server/Centos7/webServer'
+                    },
+                    {
                         text: '服务器时区和JAVA进程时区不一致问题解决',
                         link: '/Development/Server/Centos7/timezone'
                     }
