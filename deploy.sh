@@ -17,7 +17,7 @@ git init
 git add -A
 git commit -m 'deploy update . lijiating by travis'
 
-git config --local user.name "李加廷"
+git config --local user.name "jerry"
 git config --local user.email "mrjerryli@yeah.net"
 
 # 如果发布到 https://<USERNAME>.github.io

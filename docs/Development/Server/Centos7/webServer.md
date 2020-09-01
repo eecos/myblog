@@ -7,13 +7,14 @@ meta:
   - name: keywords
     content: MySQL、NGINX，JDK
 ---
-# <center> Web服务器基本搭建</center>
+
+# <center> Web 服务器基本搭建</center>
 
 [[实践篇]]
 
 ## Centos 服务建设
 
-### 设置Centos账户root密码
+### 设置 Centos 账户 root 密码
 
 ```shell
 输入：
@@ -31,11 +32,11 @@ Retype new UNIX password: ---> 重复密码
 
 ### JDK
 
-* **准备工作**
+- **准备工作**
 
-  #### [1.1官网下载jdk](https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html)
+  #### [1.1 官网下载 jdk](https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html)
 
-* **安装JDK**
+- **安装 JDK**
 
   #### 2.1 解压
 
@@ -64,7 +65,7 @@ Retype new UNIX password: ---> 重复密码
   source /etc/profile
   ```
 
-* **测试JDK**
+- **测试 JDK**
 
   ```shell
   java -version
@@ -75,7 +76,7 @@ Retype new UNIX password: ---> 重复密码
 
   ```shell
   javac
-  
+
   Usage: javac <options> <source files>
   where possible options include:
     -g                         Generate all debugging info
@@ -111,13 +112,9 @@ Retype new UNIX password: ---> 重复密码
     @<filename>                Read options and filenames from file
   ```
 
-  
-
 ---
 
 ### Maven
-
-
 
 ---
 
@@ -135,7 +132,7 @@ Retype new UNIX password: ---> 重复密码
 
 ### MySQL
 
-* **准备工作**
+- **准备工作 **
 
   #### 1.1 下载
 
@@ -148,52 +145,46 @@ Retype new UNIX password: ---> 重复密码
   **Mysql**
 
   ```shell
-  wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31.tar.gz 
+  wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31.tar.gz
   ```
 
-  
+或者 去[官网下载](https://dev.mysql.com/downloads/mysql/5.7.html#downloads)，切记是下的源码包（Source Code）
 
-  或者 去[官网下载](https://dev.mysql.com/downloads/mysql/5.7.html#downloads)，切记是下的源码包（Source Code）
+#### 1.2 解压对应软件（boost、mysql）
 
-  
+```shell
+#将文件解压至/opt/mysql目录下
+tar zxvf boost_1_59_0.tar.gz  -C /opt/apps_zip/boost_1_59_0
+tar zxvf mysql-5.7.31.tar.gz  -C /opt/apps_zip/mysql-5.7.31
 
-  #### 1.2 解压对应软件（boost、mysql）
+```
 
-  ```shell
-  #将文件解压至/opt/mysql目录下
-  tar zxvf boost_1_59_0.tar.gz  -C /opt/apps_zip/boost_1_59_0
-  tar zxvf mysql-5.7.31.tar.gz  -C /opt/apps_zip/mysql-5.7.31
-  
-  ```
+#### 1.3 **添加 mysql 用户**
 
-  #### 1.3 **添加mysql用户**
+```shell
+useradd -M -s /sbin/nologin mysql
+```
 
-  ```shell
-  useradd -M -s /sbin/nologin mysql
-  ```
+#### 1.4 建立所需目录并更改所有者为 mysql
 
-  #### 1.4 建立所需目录并更改所有者为mysql
+```shell
+mkdir -p /data/mysql/data
+chown -R mysql:mysql /data/mysql
+```
 
-  ```shell
-  mkdir -p /data/mysql/data
-  chown -R mysql:mysql /data/mysql
-  ```
+#### 1.5 安装依赖
 
-  #### 1.5 安装依赖
+```shell
+yum -y install gcc gcc-c++ ncurses ncurses-devel cmake
+```
 
-  ```shell
-  yum -y install gcc gcc-c++ ncurses ncurses-devel cmake
-  ```
-
-  
-
-* **安装MySQL**
+- **安装 MySQL**
 
   #### 2.1 预编译
 
   ```shell
   cd /opt/apps_zip/mysql5.7.31
-  
+
   cmake -DCMAKE_INSTALL_PREFIX=/opt/mysql5.7.31 \
   -DWITH_BOOST=/opt/boost_1_59_0 \
   -DMYSQL_UNIX_ADDR=/data/mysql/tmp/mysql.sock \
@@ -214,45 +205,43 @@ Retype new UNIX password: ---> 重复密码
   -DMYSQL_TCP_PORT=2116
   ```
 
-  >说明
+  > 说明
   >
-  >-DMYSQL_DATADIR为data目录 (datadir)
+  > -DMYSQL_DATADIR 为 data 目录 (datadir)
   >
-  >-DSYSCONFDIR=/opt/mysql \
+  > -DSYSCONFDIR=/opt/mysql \
   >
-  >-DCMAKE_INSTALL_PREFIX= 安装根目录
+  > -DCMAKE_INSTALL_PREFIX= 安装根目录
   >
-  >-DCMAKE_INSTALL_PREFIX= unix套接字目录
+  > -DCMAKE_INSTALL_PREFIX= unix 套接字目录
   >
-  >-DDEFAULT_CHARSET= 默认字符集
+  > -DDEFAULT_CHARSET= 默认字符集
   >
-  >-DDEFAULT_COLLATION=默认编码
+  > -DDEFAULT_COLLATION=默认编码
   >
-  >-DWITH_EXTRA_CHARSETS= 额外的编码，请使用ALL来编译。
+  > -DWITH_EXTRA_CHARSETS= 额外的编码，请使用 ALL 来编译。
   >
-  >-DWITH_MYISAM_STORAGE_ENGINE=1 编译myisam存储引擎，默认的存储引擎，不加也可以
+  > -DWITH_MYISAM_STORAGE_ENGINE=1 编译 myisam 存储引擎，默认的存储引擎，不加也可以
   >
-  >-DWITH_INNOBASE_STORAGE_ENGINE=1 支持InnoDB存储引擎，这个也是默认安装的
+  > -DWITH_INNOBASE_STORAGE_ENGINE=1 支持 InnoDB 存储引擎，这个也是默认安装的
   >
-  >-DWITH_READLINE=1 使用readline功能
+  > -DWITH_READLINE=1 使用 readline 功能
   >
-  >-DENABLED_LOCAL_INFILE=1 可以使用load data infile命令从本地导入文件
+  > -DENABLED_LOCAL_INFILE=1 可以使用 load data infile 命令从本地导入文件
   >
-  >-DMYSQL_DATADIR=数据库 数据目录
+  > -DMYSQL_DATADIR=数据库 数据目录
   >
-  >-DWITH_PARTITION_STORAGE_ENGINE=1 安装支持数据库分区
+  > -DWITH_PARTITION_STORAGE_ENGINE=1 安装支持数据库分区
   >
-  >-DWITH_FEDERATED_STORAGE_ENGINE 如果是使用的源码，需要使用CMake 加上选项。
+  > -DWITH_FEDERATED_STORAGE_ENGINE 如果是使用的源码，需要使用 CMake 加上选项。
   >
-  >-DEXTRA_CHARSETS 扩展字符支持
+  > -DEXTRA_CHARSETS 扩展字符支持
   >
-  >-DWITH_EMBEDDED_SERVER嵌入式服务器
+  > -DWITH_EMBEDDED_SERVER 嵌入式服务器
   >
-  >-DDOWNLOAD_BOOST=1 \ 
+  > -DDOWNLOAD_BOOST=1 \
   >
-  >-DWITH_BOOST=/opt/boost_1_59_0 \ 其作用为使用本地boost库
-  >
-  >
+  > -DWITH_BOOST=/opt/boost_1_59_0 \ 其作用为使用本地 boost 库
 
   #### 2.2 编译安装
 
@@ -260,15 +249,15 @@ Retype new UNIX password: ---> 重复密码
   make && make install
   ```
 
-  #### 2.3 创建MySQL用户
+  #### 2.3 创建 MySQL 用户
 
   ```shell
   groupadd mysql
-  
+
   useradd -s /sbin/nologin -M -g mysql mysql
   ```
 
-  #### 2.4 修改MySQL配置
+  #### 2.4 修改 MySQL 配置
 
   配置内容如下：
 
@@ -276,7 +265,7 @@ Retype new UNIX password: ---> 重复密码
   [client]
   port        = 2116
   socket      = /tmp/mysql.sock
-  
+
   [mysqld]
   port        = 2116
   socket      = /tmp/mysql.sock
@@ -301,7 +290,7 @@ Retype new UNIX password: ---> 重复密码
   log-bin=mysql-bin
   binlog_format=mixed
   lower_case_table_names=1
-  
+
   server-id  = 1
   expire_logs_days = 10
   early-plugin-load = ""
@@ -315,35 +304,35 @@ Retype new UNIX password: ---> 重复密码
   innodb_log_buffer_size = 8M
   innodb_flush_log_at_trx_commit = 1
   innodb_lock_wait_timeout = 50
-  
+
   [mysqldump]
   quick
   max_allowed_packet = 16M
-  
+
   [mysql]
   no-auto-rehash
-  
+
   [myisamchk]
   key_buffer_size = 64M
   sort_buffer_size = 1M
   read_buffer = 2M
   write_buffer = 2M
-  
+
   [mysqlhotcopy]
   interactive-timeout
   ```
 
-  #### 2.5 初始化MySQL
+  #### 2.5 初始化 MySQL
 
   ```shell
   rm -rf /etc/my.cnf
-  
+
   vi /etc/my.cnf 将下面的配置参数复制进去
-  
+
   cp /opt/mysql5.7.31/support-files/mysql.server /etc/init.d/mysql
-  
+
   chmod 755 /etc/init.d/mysql
-  
+
   /opt/mysql5.7.31/bin/mysqld --initialize-insecure --basedir=/opt/mysql5.7.31 --datadir=/data/mysql/var --user=mysql
   ```
 
@@ -353,28 +342,28 @@ Retype new UNIX password: ---> 重复密码
    chown -R mysql:mysql /opt/mysql5.7.31
   ```
 
-  #### 2.7 启动MySQL，修改密码
+  #### 2.7 启动 MySQL，修改密码
 
   ```shell
   /etc/init.d/mysql start
-  
+
   /opt/mysql5.7.31/bin/mysqladmin -u root password 你设置的密码
-  
+
   ```
 
-  > 修改mysql 用户root密码的方式
+  > 修改 mysql 用户 root 密码的方式
   >
-  > **方法1： 用SET PASSWORD命令**
-  > 首先登录MySQL。
+  > **方法 1： 用 SET PASSWORD 命令**
+  > 首先登录 MySQL。
   > 格式：mysql> set password for 用户名@localhost = password('新密码');
   > 例子：mysql> set password for root@localhost = password('123');
   >
-  > **方法2：用mysqladmin**
-  > 格式：mysqladmin -u用户名 -p旧密码 password 新密码
+  > **方法 2：用 mysqladmin**
+  > 格式：mysqladmin -u 用户名 -p 旧密码 password 新密码
   > 例子：mysqladmin -uroot -p123456 password 123
   >
-  > **方法3：用UPDATE直接编辑user表**
-  > 首先登录MySQL。
+  > **方法 3：用 UPDATE 直接编辑 user 表**
+  > 首先登录 MySQL。
   > mysql> use mysql;
   > mysql> update user set password=password('123') where user='root' and host='localhost';
   > mysql> flush privileges;
@@ -385,10 +374,10 @@ Retype new UNIX password: ---> 重复密码
   ldconfig
   ln -sf /opt/mysql5.7.31/lib/mysql /usr/lib/mysql
   ln -sf /opt/mysql5.7.31/include/mysql /usr/include/mysql
-  
+
   ```
 
-  #### 2.9 添加mysql的bin路径
+  #### 2.9 添加 mysql 的 bin 路径
 
   ```shell
   ln -sf /opt/mysql5.7.31/bin/mysql /usr/bin/mysql
@@ -396,7 +385,7 @@ Retype new UNIX password: ---> 重复密码
   ln -sf /opt/mysql5.7.31/bin/myisamchk /usr/bin/myisamchk
   ln -sf /opt/mysql5.7.31/bin/mysqld_safe /usr/bin/mysqld_safe
   ln -sf /opt/mysql5.7.31/bin/mysqlcheck /usr/bin/mysqlcheck
-  
+
   ```
 
   #### 3.0 开机启动
@@ -405,22 +394,22 @@ Retype new UNIX password: ---> 重复密码
   chkconfig mysql on
   或者
   systemctl enable mysql.service
-  
+
   ```
 
-  > #### 解决 Failed to start mysqld.service: Unit not found报错提示
+  > #### 解决 Failed to start mysqld.service: Unit not found 报错提示
   >
   > 输入命令
   >
   > `systemctl start mysql.service`
   >
-  > 要启动MySQL数据库是却是这样的提示
+  > 要启动 MySQL 数据库是却是这样的提示
   >
   > `Failed to start mysqld.service: Unit not found`
   >
   > 解决方法如下:
   >
-  > 首先需要安装mariadb-server
+  > 首先需要安装 mariadb-server
   >
   > `yum install -y mariadb-server`
 
@@ -445,7 +434,7 @@ Retype new UNIX password: ---> 重复密码
   yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel gcc-c++
   ```
 
-  #### 1.2. 安装 PCRE PCRE 作用是让 Nginx 支持 Rewrite 功能 
+  #### 1.2. 安装 PCRE PCRE 作用是让 Nginx 支持 Rewrite 功能
 
   ```shell
   //1：进入到安装目录
@@ -456,18 +445,18 @@ Retype new UNIX password: ---> 重复密码
   tar zxvf pcre-8.35.tar.gz
   //4：进入安装包目录
   cd pcre-8.35
-  //5：编译安装 
+  //5：编译安装
   ./configure --prefix=/opt/pcre-8.35
   make && make install
   //6：查看pcre版本
   pcre-config --version
   ```
 
-* **nginx安装**
+* **nginx 安装**
 
   #### 2.1 [官网下载](http://nginx.org/en/download.html)
 
-  #### 2.2 进入到nginx文件目录,解压NGINX
+  #### 2.2 进入到 nginx 文件目录,解压 NGINX
 
   ```shell
   cd /opt/app_zip/
@@ -478,14 +467,14 @@ Retype new UNIX password: ---> 重复密码
 
   ```shell
    cd /opt/app_zip/nginx-1.18.0
-   
+
    //将nginx编译安装到/opt/nginx/下
   ./configure --prefix=/opt/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/opt/pcre-8.35
-  
+
   make && make install
   ```
 
-  #### 2.4 验证/查看nginx版本
+  #### 2.4 验证/查看 nginx 版本
 
   ```shell
   cd  /opt/nginx/sbin
@@ -493,19 +482,19 @@ Retype new UNIX password: ---> 重复密码
   nginx version: nginx/1.18.0
   ```
 
-  #### 2.4 启动NGINX
+  #### 2.4 启动 NGINX
 
   ```shell
-  /opt/nginx/sbin/nginx 
+  /opt/nginx/sbin/nginx
   ```
 
-  #### 2.5 配置SSL
+  #### 2.5 配置 SSL
 
   ```
   cd /opt/nginx/conf
-  
+
   vim nginx.conf
-  
+
   //修改443端口文件
   http{
       #http节点中可以添加多个server节点
@@ -534,27 +523,24 @@ Retype new UNIX password: ---> 重复密码
           rewrite ^/(.*)$ https://xxx.com:443/$1 permanent;
       }
   }
-  
+
   ```
 
-  
+- **常用命令**
 
-* **常用命令**
+  #### /opt/nginx/sbin/nginx 启动
 
-  #### /opt/nginx/sbin/nginx                       启动
+  #### /opt/nginx/sbin/nginx -s stop 关闭
 
-  #### /opt/nginx/sbin/nginx -s stop           关闭
-
-  #### /opt/nginx/sbin/nginx -s reload        重启
-
-
+  #### /opt/nginx/sbin/nginx -s reload 重启
 
 ### Jenkins
 
 ### FirewallD
-  FirewallD 是 iptables 的一个封装，可以让你更容易地管理 iptables 规则 - 它并不是 iptables 的替代品。虽然 iptables 命令仍可用于 FirewallD，但建议使用 FirewallD 时仅使用 FirewallD 命令。
 
-#### 1、firewalld的基本使用
+FirewallD 是 iptables 的一个封装，可以让你更容易地管理 iptables 规则 - 它并不是 iptables 的替代品。虽然 iptables 命令仍可用于 FirewallD，但建议使用 FirewallD 时仅使用 FirewallD 命令。
+
+#### 1、firewalld 的基本使用
 
 启动： `systemctl start firewalld`
 
@@ -564,7 +550,7 @@ Retype new UNIX password: ---> 重复密码
 
 禁用： `systemctl stop firewalld`
 
-#### 2、配置firewalld-cmd
+#### 2、配置 firewalld-cmd
 
 查看版本： `firewall-cmd --version`
 
@@ -576,7 +562,7 @@ Retype new UNIX password: ---> 重复密码
 
 更新防火墙规则： `firewall-cmd --reload`
 
-查看区域信息:  `firewall-cmd --get-active-zones`
+查看区域信息: `firewall-cmd --get-active-zones`
 
 查看指定接口所属区域： `firewall-cmd --get-zone-of-interface=eth0`
 
@@ -586,9 +572,9 @@ Retype new UNIX password: ---> 重复密码
 
 查看是否拒绝： `firewall-cmd --query-panic`
 
-#### 3、用firewall-cmd 配置端口
+#### 3、用 firewall-cmd 配置端口
 
-添加：`firewall-cmd --zone=public --add-port=80/tcp --permanent`    （--permanent永久生效，没有此参数重启后失效）
+添加：`firewall-cmd --zone=public --add-port=80/tcp --permanent` （--permanent 永久生效，没有此参数重启后失效）
 
 重新载入：`firewall-cmd --reload`(添加新的规则后需要重新载入生效)
 
@@ -596,9 +582,36 @@ Retype new UNIX password: ---> 重复密码
 
 删除：`firewall-cmd --zone=public --remove-port=80/tcp --permanent`
 
+### Iptable 防火墙
 
+#### 1、基本操作
 
-### Iptable
+查看防火墙状态
+`service iptables status`
+
+停止防火墙
+`service iptables stop`
+
+启动防火墙
+`service iptables start`
+
+重启防火墙
+`service iptables restart`
+
+永久关闭防火墙
+`chkconfig iptables off`
+
+永久关闭后重启
+`chkconfig iptables on`
+
+#### 2、开启 80 端口
+
+`vim /etc/sysconfig/iptables`
+
+加入如下代码
+`-A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT`
+保存退出后重启防火墙
+
+`service iptables restart`
 
 ### ELK
-
