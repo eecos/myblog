@@ -1,0 +1,17 @@
+{
+    "name": "mrjerryli",
+    "short_name": "mrjerryli",
+    "start_url": "https://www.lijiating.online/myblog/",
+    "display": "standalone",
+    "background_color": "#2196f3",
+    "description": "技术栈",
+    "theme_color": "pink",
+    "icons": [{
+        "src": "/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/ico"
+    }],
+    "related_applications": [{
+        "platform": "web"
+    }]
+}
