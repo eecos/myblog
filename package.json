@@ -30,6 +30,12 @@
     },
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
-        "@vuepress/plugin-pwa": "^1.0.0-alpha.0"
+        "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
+        "cz-conventional-changelog": "3.3.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
